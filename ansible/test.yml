@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:  
+   - name: installing apache
+     package: apache2

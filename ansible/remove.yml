@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: removing package
+    package:
+     name: apache2
+     state: absent
+
+

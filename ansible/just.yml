@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: yes
+  vars:
+    pkg: apache2
+  tasks:
+  - name: installing {{ pkg }}
+    package:
+     name: "{{ pkg }}"
+
